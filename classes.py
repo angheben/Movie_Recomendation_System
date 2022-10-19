@@ -1,5 +1,5 @@
 class User:
-    def __int__(self, name, last_name, age, sex):
+    def __init__(self, name, last_name, age, sex):
         self.name = name
         self.last_name = last_name
         self.age = age
@@ -19,3 +19,4 @@ class Movie:
     def __str__(self):
         return f"The movie {self.name} it's of the genre {self.genre} was prduced in {self.year} and have it's "\
                f"permited to people with the minimum age of {self.minimum_age} years old"
+
