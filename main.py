@@ -56,6 +56,9 @@ def register_user():
     users_control['Sex'].append(sex)
     print("You've ben add to the system")
     print(users_control)
+
+    # How to put this information in an excel spreadsheet?
+
     menu()
 
 
@@ -79,6 +82,9 @@ def register_movie():
     movie_control['Year'].append(year)
     movie_control['Minimum Age'].append(minimum_age)
     print("Your movie has been added")
+
+    # How to put this information in an excel spreadsheet?
+
     menu()
 
 
