@@ -1,5 +1,6 @@
 import pandas as pd
 import classes
+import pyodbc
 
 users_control = {'Name': [],
                  'Last Name': [],
@@ -93,7 +94,18 @@ def check_movies():
 
 
 def indicate_movie():
-    pass
 
+    # How to work with DataBase??
+
+    data_conection = (
+        "Driver = {SQL Server};"
+        "Server = ASUS;"
+        "Database = Movie_List;"
+        "Trusted_connection = yes"
+    )
+    conection = pyodbc.connect(data_conection)
+    print("Conection Sucesfull")
+
+    # Didn't work :(
 
 menu()
