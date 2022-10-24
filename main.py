@@ -98,14 +98,15 @@ def indicate_movie():
     # How to work with DataBase??
 
     data_conection = (
-        "Driver = {SQL Server};"
-        "Server = ASUS;"
-        "Database = Movie_List;"
-        "Trusted_connection = yes"
+        "Driver={SQL Server};"
+        "Server=Asus;"
+        "Database=Movie_List;"
+        "Trusted_connection=yes"
     )
     conection = pyodbc.connect(data_conection)
     print("Conection Sucesfull")
 
     # Didn't work :(
+
 
 menu()
